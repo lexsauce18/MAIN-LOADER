@@ -1,0 +1,28 @@
+-- [[ ALPHA HUB MAIN LOADER ]]
+local PlaceId = game.PlaceId
+
+-- Use a timestamp to force GitHub to bypass the 5-minute cache
+local CacheBuster = "?t=" .. os.time()
+
+local GameScripts = {
+    [119579217517090] = "https://github.com/lexsauce18/ESCAPE-WAVES-FOR-LUCKY-BLOCKS-V1.3-SCRIPT/raw/refs/heads/main/ESCAPE%20WAVES%20FOR%20LUCKY%20BLOCKS%20SCRIPT%20V1.3",
+    [131623223084840] = "https://github.com/lexsauce18/ESCAPE-TSUNAMI-FOR-BRAINROT-V1.4-NEWs/raw/refs/heads/main/ALPHA%20HUB%20SCRIPT%20ETFB%20V1.4",
+    [124311897657957] = "https://github.com/lexsauce18/BREAK-A-LUCKY-BLOCK-ALPHA-HUB/raw/refs/heads/main/BREAK%20A%20LUCKY%20BLOCK%20ALPHA%20HUB"
+}
+
+local scriptUrl = GameScripts[PlaceId]
+
+if scriptUrl then
+    -- This downloads the LATEST version from GitHub immediately
+    local success, content = pcall(function()
+        return game:HttpGet(scriptUrl .. CacheBuster)
+    end)
+
+    if success then
+        loadstring(content)()
+    else
+        warn("Alpha Hub: Failed to fetch the update.")
+    end
+else
+    print("Alpha Hub: Game not supported.")
+end
