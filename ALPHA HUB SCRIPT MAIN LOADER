@@ -7,7 +7,8 @@ local CacheBuster = "?t=" .. os.time()
 local GameScripts = {
     [119579217517090] = "https://github.com/lexsauce18/ESCAPE-WAVES-FOR-LUCKY-BLOCKS-V1.3-SCRIPT/raw/refs/heads/main/ESCAPE%20WAVES%20FOR%20LUCKY%20BLOCKS%20SCRIPT%20V1.3",
     [131623223084840] = "https://github.com/lexsauce18/ESCAPE-TSUNAMI-FOR-BRAINROT-V1.4-NEWs/raw/refs/heads/main/ALPHA%20HUB%20SCRIPT%20ETFB%20V1.4",
-    [124311897657957] = "https://github.com/lexsauce18/BREAK-A-LUCKY-BLOCK-ALPHA-HUB/raw/refs/heads/main/BREAK%20A%20LUCKY%20BLOCK%20ALPHA%20HUB"
+    [124311897657957] = "https://github.com/lexsauce18/BREAK-A-LUCKY-BLOCK-ALPHA-HUB/raw/refs/heads/main/BREAK%20A%20LUCKY%20BLOCK%20ALPHA%20HUB",
+    [130594398886540] = "https://github.com/lexsauce18/GARDEN-HORIZON-SCRIPT/raw/refs/heads/main/GARDEN%20HORIZON%20SCRIPT"
 }
 
 local scriptUrl = GameScripts[PlaceId]
